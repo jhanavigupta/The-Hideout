@@ -1,0 +1,308 @@
+/* green: 1A381D */
+/* ---------------------- */
+/* BASIC SETUP */
+/* ---------------------- */
+
+*{
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #fff;
+    color: #000;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    max-width: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+/* ---------------------- */
+/* RESUABLE COMPONENTS */
+/* ---------------------- */
+
+h1,h2,h3,h4{
+    text-align: center;
+}
+
+h4{
+    font-size: 170%;
+    font-family: 'Courgette', cursive;
+}
+
+h1{
+    font-size: 300%;
+    letter-spacing: 3%;
+}
+
+h2{
+    padding: 2%;
+    font-size: 180%;
+    letter-spacing: 5px;
+}
+
+h3{
+    font-size: 110%;
+    margin: 0 20% 5% 20%;
+    padding: 2%;
+    font-weight: 400;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn{
+    background-color: transparent;
+    display: inline-block;
+    text-decoration:  none;
+}
+
+/* ---------------------- */
+/* HEADER */
+/* ---------------------- */
+
+header{
+     background-image:linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)),url(css/img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    color: #fff;
+}
+
+.hero-text-box h1{
+    text-decoration: underline;
+}
+
+.hero-text-box h4{
+ margin-top: 50%;
+}
+.coffee-icon{
+    color: #fff;
+    font-size: 350%;
+    text-align: center;
+    margin: 2% 10% 0% 10% ;
+}
+
+
+
+/* ----------NAV BTN!---------- */
+
+.btn-location,
+.btn-menu{
+    border: none;
+    color:#fff;
+    font-size: 250%;
+    padding: 5%;
+    text-decoration: none;
+}
+
+.btn-menu{
+    list-style: none;
+    overflow: hidden;
+    
+}
+
+ .btn-menu{
+    display: inline-block;
+}
+
+.nav-menu{
+    display: none;
+    position: absolute;
+    background-color:rgb(224, 190, 95);
+    width: 100%;
+    height: 90%;
+
+}
+
+.nav-menu a{
+    color: #000;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.nav-menu a:hover{
+    background-color:#000;
+    color: #fff;
+}
+
+.nav-btn:hover .nav-menu{
+    display: block;
+}
+
+
+
+
+
+
+/* ---------------------- */
+/* OUR STORY */
+/* ---------------------- */
+
+.our-story {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.coffee-img{
+    margin: 10% 15%;
+    width: 70%;
+    height: 50%;
+    border-radius: 5%;
+
+}
+
+/* ---------------------- */
+/* Menu */
+/* ---------------------- */
+.menu{
+    margin-bottom: 10%;
+}
+.alot-can-happen-over-coffee{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 5%;
+}
+.menu h3{
+    margin-top: 3%;
+}
+
+
+.food-photo{
+    flex: 0 0 48%;
+    padding: 1%;
+    margin:0;
+}
+
+.food-photo >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.menu-btn{
+    margin: 5% 25%;
+    padding: 3%;
+    width: 50%;
+    height: 10%;
+    font-size: 70%;
+    border: solid 3px #000;
+    border-radius: 30px;
+}
+
+.menu-btn h2{
+     letter-spacing: 0;
+}
+
+/* ---------------------- */
+/* Beans */
+/* ---------------------- */
+
+.beans{
+    position: relative;
+    color: #000;
+    background-color: rgb(224, 190, 95);
+    padding: 10% 0;
+}
+
+.beans h4{
+    margin: 0 10%;
+    font-size: 150%;
+}
+
+.beans-photo{
+    flex: 0 0 95%;
+}
+
+.beans-photo >img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+     margin: 5% 25% 0 25%;
+}
+
+
+.beans-text{
+    flex: 0 0 90%;
+}
+
+.beans-text h2{
+    font-size: 120%;
+     margin: 4% 0%;
+    letter-spacing: 0;
+}
+
+.b-text{
+    font-size: 100%;
+    text-align: center;
+    margin: 0 10% 5% 10%;
+}
+
+.btn-buy{
+    color: #000;
+    font-size: 70%;
+    font-weight: 200;
+    width: 20%;
+    height: auto;
+     border: solid 3px #000;
+     border-radius: 20px;
+}
+
+.btn-buy h2{
+     letter-spacing: 0;
+
+}
+
+/* ---------------------- */
+/* FOOTER */
+/* ---------------------- */
+
+
+footer{
+    background-color: #fff;
+    font-size: 80%;
+    color: #000;
+    font-weight: 200;
+}
+
+.tagline h3{
+    margin:0 5% 1% 5%;
+}
+
+
+.flex-container{
+    display: flex;
+
+}
+
+.copyright{
+    flex: 0 0 70%;
+}
+
+.copyright h3{
+    margin: 0;
+}
+
+.icons{
+    flex: 0 0 25%;
+}
+
+.btn-social{
+    border: none;
+    font-size: 120%;
+    padding:  0 2%;
+    color:#000;
+}
+
+
