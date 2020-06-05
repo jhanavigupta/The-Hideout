@@ -14,25 +14,19 @@
 </head>
 
 <body>
-    <header>
-
-        <section id="home"></section>
-
+    <header id="home">
         <div class="nav-btn">
-            <button class="btn btn-menu">
-                <i class=" ion-grid"></i>
-            </button>
-            <div class="nav-menu">
-                <a href="#home"><b>HOME</b></a>
-                <a href="#our-story"><b>OUR STORY</b></a>
-                <a href="#menu"><b>MENU</b></a>
-                <a href="#beans"><b>BUY COFFEE BEANS</b></a>
+            <div class="dropdown">
+                <button class="btn btn-menu">
+                    <a href="#"><i class=" ion-grid"></i></a>
+                </button>
+                <div class="nav-menu">
+                    <a href="#home"><b>HOME</b></a>
+                    <a href="#our-story"><b>OUR STORY</b></a>
+                    <a href="#menu"><b>MENU</b></a>
+                    <a href="#beans"><b>BUY COFFEE BEANS</b></a>
+                </div>
             </div>
-
-            <button class="btn btn-location">
-                <i class="ion-location"></i>
-            </button>
-
         </div>
 
         <div class="hero-text-box">
@@ -46,27 +40,33 @@
         </div>
     </header>
 
-    <section class="our-story">
+    <section class="our-story" id="our-story">
+        <div class="our-story-head">
+            <h4>Discover</h4>
+            <h2>Our Story</h2>
+        </div>
+        <div class="flex-box">
+            <div class="photo">
+                <img src="resources/img/second.jpg" alt="coffee" class="coffee-img">
+            </div>
 
-        <section id="our-story"></section>
-
-        <h4>Discover</h4>
-        <h2>Our Story</h2>
-        <img src="resources/img/second.jpg" alt="coffee" class="coffee-img">
-        <h3>The Hideout cafe is brewing it’s way in the market. We were established in January 2019 and since
-            then we
-            have become a
-            loved coffee hideout.<br><br>Quality, Elegance and Peace is what we stand for!</h3>
-    </section>
-
-    <section class="menu">
-
-        <section id="menu"></section>
-
+            <div class="text">
+                <h3>The Hideout cafe is brewing it’s way in the market. We were established in January 2019 and since
+                    then we
+                    have become a
+                    loved coffee hideout.<br class="break"><br class="break">Quality, Elegance and Peace is what we
+                    stand for!</h3>
+            </div>
+        </div>
         <img src="resources/img/alot can happen.jpg" alt="alot-can-happen-over-coffee"
             class="alot-can-happen-over-coffee">
-        <h4>Discover</h4>
-        <h2>Menu</h2>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="menu-text">
+            <h4>Discover</h4>
+            <h2>Menu</h2>
+        </div>
         <h3>For those with pure coffee indulgence in mind come next door and try our hand crafted cuppas! We
             love coffee and food just like you.</h3>
 
@@ -97,62 +97,115 @@
         </div>
 
         <button class="btn menu-btn">
-            <h2>View full menu!</h2>
+            <a href="#">
+                <h2>View full menu!</h2>
+            </a>
         </button>
 
     </section>
 
-    <section class="beans">
+    <section class="beans" id="beans">
 
-        <section id="beans"></section>
 
         <h4>Our Coffee is a
             Never ending story!</h4>
+        <div class="for-phones">
+            <div class="row">
+                <div class="beans-photo">
+                    <img src="resources/img/light.jpg" class="b-photo" alt="the light roast">
+                </div>
+                <div class="beans-text">
+                    <h2>The Light Roast</h2>
+                    <p class="b-text">An exciting combination of the familiar and exotic rich flavoured beans.</p>
+                </div>
+            </div>
 
-        <div class="row">
-            <div class="beans-photo">
-                <img src="resources/img/light.jpg" class="b-photo" alt="the light roast">
+            <div class="row">
+
+                <div class="beans-photo">
+                    <img src="resources/img/middle.jpg" class="b-photo" alt="the middle roast">
+                </div>
+
+                <div class="beans-text">
+                    <h2>The Middle Roast</h2>
+                    <p class="b-text">Between the light American roast and the darker French roast- the
+                        perfect blend, creates a heavy-bodied yet lively cup.</p>
+                </div>
             </div>
-            <div class="beans-text">
-                <h2>The Light Roast</h2>
-                <p class="b-text">An exciting combination of the familiar and exotic rich flavoured beans , this
-                    exquisite cup featuers beans from premier
-                    estates in East Africa, Southeren America and Cental America.</p>
+
+            <div class="row">
+                <div class="beans-photo">
+                    <img src="resources/img/dark.jpg" class="b-photo" alt="the dark roast">
+                </div>
+                <div class="beans-text">
+                    <h2>The Dark Roast</h2>
+                    <p class="b-text">An exciting combination of
+                        strong flavours.
+                        Perfect as a morning brew.</p>
+                </div>
             </div>
-            <button class=" btn btn-buy">
-                <h2>Buy</h2>
-            </button>
         </div>
 
-        <div class="row">
-
-            <div class="beans-photo">
-                <img src="resources/img/middle.jpg" class="b-photo" alt="the middle roast">
+        <div class="not-for-phones">
+            <div class="row">
+                <div class="beans-photo">
+                    <img src="resources/img/light.jpg" class="b-photo" alt="the light roast">
+                </div>
+                <div class="beans-text">
+                    <h2>The Light Roast</h2>
+                    <p class="b-text">An exciting combination of the familiar and exotic rich flavoured beans.</p>
+                </div>
             </div>
 
-            <div class="beans-text">
-                <h2>The Middle Roast</h2>
-                <p class="b-text">Between the light American roast and the darker French roast stands our Viennese: the
-                    perfect blend blostered by
-                    Indonesian beans to create a heavy-bodied yet lively cup, with a bittersweet chocolate flavour.</p>
+            <div class="row">
+
+                <div class="beans-text">
+                    <h2>The Middle Roast</h2>
+                    <p class="b-text">Between the light American roast and the darker French roast- the
+                        perfect blend, creates a heavy-bodied yet lively cup.</p>
+                </div>
+
+                <div class="beans-photo">
+                    <img src="resources/img/middle.jpg" class="b-photo" alt="the middle roast">
+                </div>
             </div>
-            <button class=" btn btn-buy">
-                <h2>Buy</h2>
-            </button>
+
+            <div class="row">
+                <div class="beans-photo">
+                    <img src="resources/img/dark.jpg" class="b-photo" alt="the dark roast">
+                </div>
+                <div class="beans-text">
+                    <h2>The Dark Roast</h2>
+                    <p class="b-text">An exciting combination of
+                        strong flavours.
+                        Perfect as a morning brew.</p>
+                </div>
+            </div>
         </div>
+        <button class=" btn btn-buy">
+            <a href="#">
+                <h2>Buy the beans</h2>
+            </a>
+        </button>
+    </section>
 
+    <section class="follow">
+        <h2>Follow us on</h2>
         <div class="row">
-            <div class="beans-photo">
-                <img src="resources/img/dark.jpg" class="b-photo" alt="the dark roast">
-            </div>
-            <div class="beans-text">
-                <h2>The Dark Roast</h2>
-                <p class="b-text">An exciting combination of the familiar and exotic: this results in a rich harmony of
-                    bright flavours, fruity and spicy.
-                    Perfect as a morning brew.</p>
-            </div>
-            <button class=" btn btn-buy">
-                <h2>Buy</h2>
+            <button class="btn btn-social">
+                <a href="#" class="facebook"><i class="ion-social-facebook"></i></a>
+            </button>
+            <button class="btn btn-social">
+                <a href="#" class="instagram"><i class="ion-social-instagram">
+                    </i></a>
+            </button>
+            <button class="btn btn-social">
+                <a href="#" class="twitter"><i class="ion-social-twitter">
+                    </i></a>
+            </button>
+            <button class="btn btn-social">
+                <a href="#" class="pintrest"><i class="ion-social-pinterest">
+                    </i></a>
             </button>
         </div>
     </section>
@@ -162,32 +215,11 @@
             <h3>
                 The Hideout - coffee shop
                 One Sip- Forget The Rest!
-                Rich in flavour but never bitter!
+                Rich in flavour but never bitter! <i class="ion-ios-heart">
+                </i>
             </h3>
         </div>
-        <div class="row">
-
-            <div class="copyright">
-                <h3>Copyright The Hideout 2019-2020</h3>
-            </div>
-
-            <div class="icons">
-                <button class="btn btn-social"><i class="ion-social-facebook" class="icon-facebook">
-                    </i></button>
-
-                <button class="btn btn-social"><i class="ion-social-instagram" class="icon-instagram">
-                    </i></button>
-
-                <button class="btn btn-social"><i class="ion-social-twitter" class="icon-twitter">
-                    </i></button>
-
-                <button class="btn btn-social"><i class="ion-social-pinterest" class="icon-pintrest">
-                    </i></button>
-            </div>
-        </div>
-
     </footer>
-
 </body>
 
 </html>
