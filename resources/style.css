@@ -32,7 +32,6 @@ h1{
 h2{
     padding: 2%;
     font-size: 180%;
-    letter-spacing: 5px;
     text-align: center;
 }
 
@@ -197,7 +196,7 @@ header{
     border-radius: 5%;
 }
 
-.menu-btn{
+/* .menu-btn{
     margin: 5% 25%;
     padding: 3%;
     width: 50%;
@@ -217,7 +216,7 @@ header{
 
 .menu-btn h2{
      letter-spacing: 0;
-}
+} */
 
 /* ---------------------- */
 /* Beans */
@@ -249,7 +248,6 @@ header{
     border-radius: 100%;
     margin: 5% 30% 0 30%;
 }
-
 
 .beans-text{
     flex: 0 0 90%;
@@ -350,10 +348,9 @@ footer{
 
 /* ====================MEDIA QUERIES====================== */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     html{
-        max-width: 1024px;
         background-color: #fff;
     }
 
@@ -492,15 +489,15 @@ footer{
 
      .food-photo{
          flex: 0 0 31%;
-         transition: border 0.2s;
+         transition: box-shadow 0.2s linear;
      }
 
-     .food-photo:hover{
-         border: 5px solid #006266;
-         border-radius: 10px;
-         cursor: pointer;
+     .food-photo > img:hover{
+        box-shadow:8px 8px 8px rgba(255, 255, 255, 0.5),
+        -8px -8px 8px rgba(255, 255, 255, 0.5);
+        cursor: pointer;
      }
-     .menu-btn{
+     /* .menu-btn{
     margin: 2% 32.5%;
     padding: 1%;
     width: 35%;
@@ -509,7 +506,7 @@ footer{
     border: solid 3px #006266;
     border-radius: 50px;
     background-color: transparent;
-}
+} */
 
 /* ==============BEANS================ */
 
@@ -527,6 +524,9 @@ footer{
 }
 
 .beans{
+    position: relative;
+    color: #fff;
+    background-color: #006266;
     padding: 3% 0;
 }
 .beans h4{
@@ -535,24 +535,36 @@ footer{
     color: #fff;
 }
 
-.beans-photo{
+.beans-photo,
+.beans-text-middle{
     flex: 0 0 44%;
+}
+
+.beans-photo{
     margin: 5% 0 10% 0;
 }
 
-.beans-photo >img{
+.beans-photo >img,
+.beans-photo-middle >img{
     width: 80%;
     height: auto ;
+    border-radius: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.555);
 }
 
-.beans-text{
+.beans-text,
+.beans-photo-middle{
     flex: 0 0 45%;
     text-align: center;
     padding: 0;
 }
 
-.beans-text h2{
+.beans-photo-middle{
+    margin: 5% 0 10% 0;
+}
+
+.beans-text h2,
+.beans-text-middle h2{
     font-size: 170%;
     margin: 25% 0 10% 0;
     letter-spacing: 2;
@@ -561,7 +573,7 @@ footer{
 .b-text{
     font-size: 140%;
     margin: 5% 0;
-     margin-left: 5%;
+    margin-left: 5%;
 }
 
 .btn-buy{
@@ -604,49 +616,28 @@ footer{
 }
 
 .facebook {
-    color: #000;
-}
-
-.facebook:hover {
     color: #3B5998;
-    font-size: 150%;
 }
 
 .instagram {
-    color:  #000;
-}
-
-.instagram:hover {
     color:  #C13584;
-     font-size: 150%;
-}
-
-.twitter{
-    color: #000;
 }
 
 .twitter:hover {
     color: #1DA1F2;
-     font-size: 150%;
 }
 
-.pintrest{
-    color: #000;
-}
-
-.pintrest:hover {
+.pintrest {
     color:  #BD081C;
-     font-size: 150%;
 }
 
 
 }
 
 
-@media only screen and (min-width: 1025px){
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
 
     html{
-        max-width: 1500px;
         background-color: #fff;
     }
 
@@ -705,6 +696,13 @@ footer{
         padding: 0 30px;
         font-size: 180%;
     }
+
+    .coffee-icon{
+    color: #fff;
+    font-size: 370%;
+    text-align: center;
+    margin: -7% 10% 0% 10% ;
+}
 
     /* ------------navigation------------ */
 
@@ -774,6 +772,7 @@ footer{
 
      .menu{
          margin: 0;
+         margin-bottom: 3%;
      }
 
      .menu h4{
@@ -790,21 +789,20 @@ footer{
 
 
      .menu .row{
-        margin: 0 20%;
+        margin: 0 12%;
      }
 
      .food-photo{
-         flex: 0 0 31%;
-         transition: border 0.2s;
+        flex: 0 0 31%;
+        transition: box-shadow 0.2s linear;
      }
 
-     .food-photo:hover{
-         border: 5px solid #006266;
-         border-radius: 10px;
-         cursor: pointer;
+     .food-photo > img:hover{
+        box-shadow:-4px -4px 10px rgba(0, 0, 0, 0.50), 4px 4px 10px rgba(0, 0, 0, 0.50);
+        cursor: pointer;
      }
 
-    .menu-btn{
+    /* .menu-btn{
     margin: 2% 40%;
     padding: 1%;
     width: 20%;
@@ -824,7 +822,7 @@ footer{
 .menu-btn h2:hover{
     padding-right: 25px;
     color: #fff;
-}
+} */
 
 /* ==============BEANS================ */
 .for-phones{
@@ -835,9 +833,9 @@ footer{
 }
 
 .not-for-phones .row{
-    margin: 0 10%;
+    margin: -5% 10%;
     text-align: center;
-    padding: 2%;
+    padding: 0;
 }
 
 
@@ -850,24 +848,36 @@ footer{
     color: #fff;
 }
 
-.beans-photo{
+.beans-photo,
+.beans-text-middle {
     flex: 0 0 45%;
+}
+
+.beans-photo{
     margin: 5% 0 10% 0;
 }
 
-.beans-photo >img{
+.beans-photo >img,
+.beans-photo-middle >img {
     width: 50%;
     height: auto ;
+    border-radius: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.555);
 }
 
-.beans-text{
+.beans-text,
+.beans-photo-middle{
     flex: 0 0 45%;
      text-align: center;
      /* margin-top: 10px; */
 }
 
-.beans-text h2{
+.beans-photo-middle{
+    margin: 5% 0 10% 0;
+}
+
+.beans-text h2,
+.beans-text-middle h2{
     font-size: 140%;
      margin: 20% 0 5% 0;
     letter-spacing: 2;
@@ -894,7 +904,6 @@ footer{
 }
 
 .btn-buy h2:hover{
-    padding-right: 25px;
     color: #fff;
 }
 
@@ -903,13 +912,32 @@ footer{
     margin: 5% 10% 10% 10%;
 }
 
+.follow > h2:after{
+    display: block;
+    height: 3px;
+    background-color: #000;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.btn-social{
+    border: none;
+    background-color: transparent;
+    font-size: 350%;
+    flex: 0 0 15%;
+    text-decoration: none;
+    margin: 0;
+    transition: 0.1s;
+}
+
 .facebook {
     color: #000;
 }
 
 .facebook:hover {
     color: #3B5998;
-    /* font-size: 150%; */
 }
 
 .instagram {
@@ -918,7 +946,6 @@ footer{
 
 .instagram:hover {
     color:  #C13584;
-     /* font-size: 150%; */
 }
 
 .twitter{
@@ -927,7 +954,6 @@ footer{
 
 .twitter:hover {
     color: #1DA1F2;
-     /* font-size: 150%; */
 }
 
 .pintrest{
@@ -936,7 +962,389 @@ footer{
 
 .pintrest:hover {
     color:  #BD081C;
-     /* font-size: 150%; */
+}
+
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1920px) {
+
+    
+    html{
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    h1,h2,h3,h4{
+        margin: 0;
+        padding: 0;
+    }
+
+    h1{
+        letter-spacing: 5px;
+    }
+
+    h4{
+        letter-spacing: 3px;
+        font-size: 200%;
+    }
+
+    h2{
+        padding: 1%;
+        font-size: 250%;
+    }
+
+    h3{
+        letter-spacing: 1px;
+    }
+
+    /* ==============HEADER================ */
+
+    .header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.69)), url(css/img/hero-desktop.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+
+    .hero-text-box{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .hero-text-box h1{
+       font-size: 500%;
+       margin-top: -10%;
+       letter-spacing: 1%;
+    }
+
+    .hero-text-box > h1:after{
+    text-decoration: none;
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    content: " ";
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+    .hero-text-box h4{
+         font-size: 300%;
+         margin-top: 15%;
+    }
+
+    .hero-text-box h3{
+        margin-top: -10%;
+        padding: 0 30px;
+        font-size: 250%;
+    }
+
+    .coffee-icon{
+    color: #fff;
+    font-size: 450%;
+    text-align: center;
+    margin: -10% 10% 0% 10% ;
+}
+
+    /* ------------navigation------------ */
+
+    .btn-menu {
+        display: none;
+    }
+
+    .dropdown:hover .nav-menu, .nav-menu{
+        display: flex;
+    }
+
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-flow: row wrap;
+        height: 80px;
+        width: 100%;
+        justify-content: space-evenly;
+        align-content: center;
+        z-index: 2;
+        padding-top: 0;
+    }
+
+    .nav-menu a{
+        font-size: 200%;
+    }
+     /* ==============OUR STORY================ */
+
+     .our-story{
+        margin-top: 4%;
+        margin-bottom: 1%;
+     }
+     .break{
+         display: none;
+     }
+
+     .our-story h2{
+        margin-bottom: 2%;
+     }
+
+     .our-story .flex-box{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-content: center;
+     }
+
+
+     .text{
+        text-align: center;
+     }
+
+     .text > h3{
+        padding: 1% 10%;
+        text-align: center;
+        margin: 3% 1%;
+        font-size: 200%;
+     }
+     
+     .coffee-img{
+        width: 30%;
+        height: 50%;
+        margin: 0 35% ;
+        border-radius: 50px;
+     }
+
+
+     /* ==============MENU================ */
+
+     .menu{
+         margin: 0;
+         margin-bottom: 3%;
+     }
+
+     .menu h4{
+         margin: 1% auto;
+         padding: 0;
+     }
+
+
+     .menu h3{
+         margin: 1% 1% 2% 1%;
+         padding: 0 10%;
+          font-size: 200%;
+     }
+
+
+     .menu .row{
+        margin: 0 5%;
+     }
+
+     .food-photo{
+         flex: 0 0 31%;
+         transition: box-shadow 0.2s linear;
+     }
+
+     .food-photo > img:hover{
+        box-shadow:8px 8px 8px rgba(255, 255, 255, 0.5),
+        -8px -8px 8px rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+     }
+
+    /* .menu-btn{
+    margin: 2% 40%;
+    padding: 1%;
+    width: 20%;
+    height: auto;
+    font-size: 70%;
+    border: solid 3px #006266;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.menu-btn:hover{
+    border: solid 3px rgb(114, 62, 46);
+    background-color: rgb(114, 62, 46);
+}
+
+.menu-btn h2:hover{
+    padding-right: 25px;
+    color: #fff;
+} */
+
+/* ==============BEANS================ */
+.for-phones{
+    display: none;
+}
+.not-for-phones{
+    display: block;
+}
+
+.not-for-phones .row{
+    margin: -4% 10%;
+    text-align: center;
+    padding: 0;
+}
+
+
+.beans{
+    padding: 5% 0;
+}
+.beans h4{
+    margin: 0 10% 4% 10%;
+    font-size: 350%;
+    color: #fff;
+}
+
+.beans-photo,
+.beans-text-middle{
+    flex: 0 0 45%;
+}
+
+.beans-photo{
+    margin: 5% 0 10% 0;
+}
+
+.beans-photo >img,
+.beans-photo-middle >img {
+    width: 80%;
+    height: auto ;
+    border-radius: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+}
+
+.beans-text,
+.beans-photo-middle{
+    flex: 0 0 45%;
+     text-align: center;
+     /* margin-top: 10px; */
+}
+
+.beans-photo-middle{
+    margin: 5% 0 10% 0;
+}
+
+.beans-text h2,
+.beans-text-middle h2{
+    font-size: 300%;
+    margin: 3% 0 5% 0;
+    letter-spacing: 2;
+}
+
+.b-text{
+    font-size: 200%;
+    margin: 5% 0;
+}
+
+.btn-buy{
+    width: 30%;
+    height: auto;
+    border: solid 3px #fff;
+    border-radius: 50px;
+    margin: 5% 40% 0 40%;
+    padding: 1% 0;
+    transition: 0.2s;
+}
+
+.btn-buy h2{
+    font-size: 300%;
+}
+
+.btn-buy:hover{
+      border: solid 3px rgb(114, 62, 46);
+       background-color: rgb(114, 62, 46);
+}
+
+.btn-buy h2:hover{
+    color: #fff;
+}
+
+/* ===========FOLLOW================ */
+.follow{
+    margin: 5% 10% 10% 10%;
+}
+
+.follow > h2{
+    font-size: 400%;
+}
+
+.follow > h2:after{
+    display: block;
+    height: 5px;
+    background-color: #000;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-social{
+    border: none;
+    background-color: transparent;
+    font-size: 350%;
+    flex: 0 0 15%;
+    text-decoration: none;
+    margin: 0;
+    font-size: 450%;
+    transition: 0.1s;
+}
+
+.facebook {
+    color: #000;
+}
+
+.facebook:hover {
+    color: #3B5998;
+}
+
+.instagram {
+    color:  #000;
+}
+
+.instagram:hover {
+    color:  #C13584;
+}
+
+.twitter{
+    color: #000;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.pintrest{
+    color: #000;
+}
+
+.pintrest:hover {
+    color:  #BD081C;
+}
+
+/* ============FOOTER============== */
+
+footer{
+    background-color: #000;
+    font-size: 90%;
+    color: #fff;
+    font-weight: 200;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tagline h3{
+    margin:0;
+    padding: 1% 5%;
+     font-size: 200%;
+}
+
+.ion-ios-heart{
+    color: rgb(134, 7, 7);
+    font-size: 190%;
 }
 
 }
